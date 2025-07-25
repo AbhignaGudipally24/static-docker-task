@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      text-align: center;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+    }
+    section {
+      padding: 40px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Welcome to My Advanced Page</h1>
+  </header>
+
+  <section>
+    <p>Click the button to reveal a message:</p>
+    <button onclick="showMessage()">Click Me!</button>
+    <p id="output" style="margin-top:20px; font-size:18px;"></p>
+  </section>
+
+  <script>
+    function showMessage() {
+      document.getElementById("output").innerText = "🎉 You clicked the button! Enjoy exploring.";
+    }
+  </script>
+
+</body>
+</html>
